@@ -31,7 +31,7 @@ if [[ -f $ENV_DIR/CUSTOM_SSH_KEY && -f $ENV_DIR/CUSTOM_SSH_KEY_HOSTS ]]; then
             "  UserKnownHostsFile=/dev/null\n"\
             "  StrictHostKeyChecking no"\
             >> ~/.ssh/config
-    echo -e ~/.ssh/config
+    cat ~/.ssh/config
   done
 
   echo "-----> Successfully added custom SSH key"
