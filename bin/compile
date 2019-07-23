@@ -33,6 +33,8 @@ if [[ -f $ENV_DIR/CUSTOM_SSH_KEY && -f $ENV_DIR/CUSTOM_SSH_KEY_HOSTS ]]; then
             >> ~/.ssh/config
     cat ~/.ssh/config
   done
+  
+  ssh -T git@github.com
 
   echo "-----> Successfully added custom SSH key"
 
